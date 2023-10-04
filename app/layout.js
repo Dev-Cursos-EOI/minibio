@@ -9,9 +9,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const style = "bg-slate-200 " + inter.className
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={style}>{children}</body>
     </html>
   )
 }
